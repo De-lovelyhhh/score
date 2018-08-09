@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <input class="putNumber" placeholder="Class ID(1-10)" bindinput='number1'></input>
+  <input class="putNumber" placeholder="Student ID(2017101001-2017101100)" bindinput='id'></input>
+  <button class="button1" bindtap='sure'>SUBMIT</button>
+</view>
+
+<view hidden='{{flag}}' class='content'>
+  <view class='content-item'>student ID:{{stuid}}</view>
+  <view class='content-item'>Class ID:{{classid}}</view>
+  <view class='content-item'>Score:{{returnNumber}}</view>
+</view>
